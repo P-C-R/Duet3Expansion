@@ -23,18 +23,19 @@
 
 // Drivers configuration
 #define SUPPORT_DRIVERS			1
-#define HAS_SMART_DRIVERS		0
-#define HAS_STALL_DETECT		0
-#define SINGLE_DRIVER			1
-#define SUPPORT_SLOW_DRIVERS	1
+#define HAS_SMART_DRIVERS		1
+#define HAS_STALL_DETECT		1
+#define SINGLE_DRIVER			0
+#define SUPPORT_SLOW_DRIVERS	0
 #define SUPPORT_DELTA_MOVEMENT	0
-#define USE_EVEN_STEPS			1
+#define USE_EVEN_STEPS			0
 
 #define SUPPORT_TMC51xx			0
 #define SUPPORT_TMC2660			0
-#define SUPPORT_TMC22xx			0
+#define SUPPORT_TMC22xx			1
 
-constexpr size_t NumDrivers = 1;
+constexpr size_t NumDrivers = 2;
+constexpr size_t MaxSmartDrivers = 2;
 
 #define USE_CCL		0			// USE_CCL also requires DIFFERENTIAL_STEPPER_OUTPUTS
 
